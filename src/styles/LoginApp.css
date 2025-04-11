@@ -1,0 +1,132 @@
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--secondary-bg-color);
+  overflow: hidden;
+}
+
+.login-container {
+  background-color: #fff;
+  display: flex;  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(10, 10, 10, 0.102);
+  height: 400px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vertical-line {
+  height: 85%;
+  border-right: 2px solid var(--primary-bg-color);
+}
+
+.login-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5% 25% 25% 5% / 5% 25% 25% 5%;
+  background-color: var(--primary-bg-color);
+}
+
+.login-img img{
+  width: 300px;
+  height: auto;
+}
+
+.custom-input {
+  display: block;
+  outline: none;
+  height: 45px;
+  width: 85%;
+  margin: 2% auto;
+  margin-bottom: 6%;
+  color: var(--primary-text-color);
+}
+
+.custom-input::-webkit-inner-spin-button,
+.custom-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-input:focus {
+  border-color: var(--primary-bg-color); 
+}
+
+.custom-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--primary-bg-color)!important;
+  color: var(--therciary-text-color);
+  margin: 10px 0px!important;
+}
+
+.custom-btn:hover {
+  background-color: var(--secondary-bg-color)!important;
+  color: var(--primary-text-color);
+  border: 1px solid var(--primary-bg-color);
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  font-weight: bold;
+}
+
+.text-danger {
+  font-size: 0.8rem;
+  color: var(--error-text-color);
+  font-weight: 500;
+}
+
+/* Estilos responsivos */
+@media (max-width: 576px) {
+  .login-container {
+    width: 80%!important;
+    margin: 5% auto!important;
+  }
+
+  .login-img {
+    display: none!important;
+  }
+
+  .vertical-line {
+    display: none!important;
+  }
+  
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .login-container {
+    width: 80%!important;
+    margin: 5% auto!important;
+  }
+  
+  .login-img img{
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .login-container {
+    width: 70%!important;
+    margin: 5% auto!important;
+  }
+}
