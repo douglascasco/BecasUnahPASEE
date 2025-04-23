@@ -1,11 +1,13 @@
 import apiUrl from "../../config";
 
 const fetchData = async () => {
-    try {        
+    try {
         const response = await fetch(`${apiUrl}/api/faq?`, {
             method: "GET",
             headers: {
-                'Content-Type': 'application/json'
+                "Access-Control-Allow-Origin": "https://becas-unah-pasee-6s04om6n9-douglas-cascos-projects.vercel.app",
+                "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
+                "Access-Control-Allow-Headers": "Content-Type, Authorization",
             },
         });
 
