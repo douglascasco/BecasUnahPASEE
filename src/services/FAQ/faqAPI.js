@@ -5,7 +5,7 @@ const fetchData = async () => {
         const response = await fetch(`${apiUrl}/api/faq?`, {
             method: "GET",
             headers: {
-                "Access-Control-Allow-Origin": "https://becas-unah-pasee-6s04om6n9-douglas-cascos-projects.vercel.app",
+                "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
                 "Access-Control-Allow-Headers": "Content-Type, Authorization",
             },
